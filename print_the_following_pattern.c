@@ -8,16 +8,9 @@ int main()
     {
         for(j=0;j<n;j++)
         {
-            if(i==j)
-            {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
-        }
-        printf("
+            printf("%d ",n-j);
+       }
+       printf("
 ");
     }
 }
