@@ -8,13 +8,13 @@ int main()
     {
         for(j=0;j<n;j++)
         {
-            if(i==j || i==n-j-1)
+            if(i==j)
             {
-                printf("x");
+                printf("0");
             }
             else
             {
-                printf("0");
+                printf("x");
             }
         }
         printf("
