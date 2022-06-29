@@ -1,19 +1,16 @@
-#include <stdio.h>
-int getReverse(int num, int rev)
+#include<stdio.h>
+int main()
 {
-    if(num == 0)
+    signed int t,a,r,rev=0;
+    scanf("%d",&a);
+    t=a;
+    while(a>0)
     {
-        return rev;
+        r=a%10;
+        rev=(rev*10)+r;
+        a=a/10;
     }
-    int rem = num % 10;
-    rev = rev * 10 + rem;
-    return getReverse(num / 10, rev);
-}
-int main ()
-{
-    int num, reverse = 0;
-    scanf("%d",&num);
-    if (num == getReverse(num, reverse))
+    if(t==rev)
     {
         printf("True");
     }
@@ -21,5 +18,5 @@ int main ()
     {
         printf("False");
     }
-
+    return 0;
 }
