@@ -2,8 +2,10 @@
 #include<math.h>
 int main()
 {
-    double p,r,t,a;
+    double p,t,r,s,a,i;
     scanf("%lf%lf%lf",&p,&r,&t);
-    a=p*(pow(1+(r/100),t));
-    printf("%.2f",a);
+    s=1+(r/100);
+    a=pow(s,t);
+    i=(p*a);
+    printf("%.2lf",i);
 }
